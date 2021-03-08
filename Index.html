@@ -1,9 +1,70 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title>Graffhelp</title>
 </head>
 
 <body>
-    <h1>Graffhelp></h1>
-    <h2>Test2</h2>
+
+
+<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="right" onclick="plusDivs(+1)">&#10095;</button>
+
+<img class="mySlides" src="FAQ.jpg">
+<img class="mySlides" src="INTRO.jpg">
+
+
+  <style>
+
+body {
+  height: 100%;
+  background-color: black;
+}
+.mySlides {
+  margin: auto;
+  position: relative;
+  vertical-align: middle;
+  max-width: 30em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.left{
+  float: left;
+  margin-left: 20em;
+  margin-top: 25%;
+}
+
+.right{
+  float: right;
+  margin-right: 20em;
+  margin-top: 25%;
+}
+
+
+
+
+  </style>
+
+  <script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+  </script>
 </body>
+</html>
