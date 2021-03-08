@@ -7,14 +7,21 @@
 <body>
 
 
-<button class="left" onclick="plusDivs(-1)">&#10094;</button>
-<button class="right" onclick="plusDivs(+1)">&#10095;</button>
 
+
+<div class="slideshow">
 <img class="mySlides" src="Images/FAQ.jpg">
 <img class="mySlides" src="Images/INTRO.jpg">
 
 
+<button class="left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="right" onclick="plusDivs(+1)">&#10095;</button>
+
+</div>
+
   <style>
+
+* {box-sizing:border-box}
 
 body {
   height: 100%;
@@ -29,21 +36,44 @@ body {
   margin-bottom: 1em;
 }
 
-.left{
-  float: left;
-  margin-left: 20em;
-  margin-top: 25%;
-}
-
-.right{
-  float: right;
-  margin-right: 20em;
-  margin-top: 25%;
+.slideshow {
+  position: relative;
+  margin: auto;
+  max-width: 1000px;
 }
 
 
 
+.right {
+  right: 5em;
+  top: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 150%;
+  color: black;
+  position: absolute;
 
+}
+
+.right:hover {
+  box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.25), 2px 5px 5px rgba(255,255,255,0.22);
+}
+
+.left {
+  left: 5em;
+  top: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 150%;
+  color: black;
+  position: absolute;
+
+}
+
+
+.left:hover {
+  box-shadow: 5px 10px 15px rgba(255, 255, 255, 0.25), 2px 5px 5px rgba(255,255,255,0.22);
+}
   </style>
 
   <script>
