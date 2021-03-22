@@ -12,10 +12,65 @@
 <body>
 
     <ul class="nav">
-        <li><a href="/graffiti-videos.html/">Graffiti Videos</a></li>
-        <li><a href="/history.html/">History</a></li>
-        <li><a href="/other-links.html/">Other Links</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./other-links.html">Other Links</a></li>
       </ul>
+
+<div class=video>
+      <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/YiJaIauyL_Y" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+<div class=video>
+      <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/gp8ZNqaG-dE" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+<div class=video>
+    <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/LRlpaIlx3sY" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+<div class=video>
+    <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/7Ub8uRFzUCQ" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+<div class=video>
+    <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/jvHYmbUHf3A" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+<div class=video>
+    <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/skGyFowTzew" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+<div class=video>
+    <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/KKqkYvesV6Y" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+<div class=video>
+    <iframe class="youtubevids" width="560" height="315" src="https://www.youtube.com/embed/Q-Ch8MeH5BI" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen style="border: 1px solid #EEE;"></iframe>
+</div>
+
+
+
+
+
+
+
 
 
       <style>
@@ -24,15 +79,18 @@
         
         body {
           height: 100%;
+          width: 100%;
+          font-size: 1em;
           background-color: black;
           font-family: 'Roboto', sans-serif;
         }
         
         .nav{
             list-style:none;
-            margin:0;
             padding:0;
             text-align: center;
+            display: block;
+            margin: auto;
             
         }
         .nav li{
@@ -45,21 +103,33 @@
             padding:1em;
             color: #f2f2f2;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1em;
             border: 2px;
             border-color: white;
-        
+            text-transform: uppercase;
         }
         
-        
-        
-        
-        /* Change the color of links on hover */
         .nav a:hover {
           background-color: #ddd;
           color: black;
           
         }
+
+        .video {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            margin:auto;
+            position: relative;
+        }
+
+        .youtubevids{
+            margin: auto;
+            display: block;
+            min-width: fit-content;
+            max-width: 80%;
+            height: 315px;
+            }
+
 
         </style>
 
